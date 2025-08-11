@@ -28,7 +28,7 @@ ENDING_BAD = "正解だけど…Badエンディングです。"
 ENDING_WRONG = "残念、不正解です。"
 
 FINAL_CHAPTER = "終章：全ての真実が明らかになった…"
-BONUS_PUZZLE = {"image_id": "xxxxxx", "hint_word": "fish"}
+BONUS_PUZZLE = {"image_id": "1GhjyvsaWP23x_wdz7n-nSqq5cziFcf1U", "hint_word": "fish"}
 BONUS_CLEAR = "大正解！クリア特典があるよ。探偵事務所にお越しください。"
 
 # --- ユーザー状態管理 ---
