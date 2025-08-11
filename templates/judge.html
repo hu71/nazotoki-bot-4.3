@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>判定フォーム</title>
+</head>
+<body>
+    <h1>判定フォーム</h1>
+    {% for entry in data %}
+        <div style="border:1px solid black; margin:10px; padding:10px;">
+            <p>参加者: {{ entry.name }} ({{ entry.user_id }})</p>
+            <p>現在の問題: {{ entry.question }}</p>
+            <img src="{{ entry.image_url }}" style="max-width:300px;"><br>
+            {% if entry.question != "おまけ" and entry.question != 5 %}
+                <a href="/send_result/{{ entry.user_id }}/correct">正解</a>
+                <a href="/send_result/{{ entry.user_id }}/wrong">不正解</a>
+            {% elif entry.question == 5 %}
+                <a href="/send_result/{{ entry.user_id }}/good">正解1(Good)</a>
+                <a href="/send_result/{{ entry.user_id }}/bad">正解2(Bad)</a>
+                <a href="/send_result/{{ entry.user_id }}/wrong">不正解</a>
+            {% else %}
+                <a href="/send_result/{{ entry.user_id }}/correct">正解</a>
+                <a href="/send_result/{{ entry.user_id }}/wrong">不正解</a>
+            {% endif %}
+        </div>
+    {% endfor %}
+</body>
+</html>
