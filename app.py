@@ -28,7 +28,7 @@ PUZZLES = [
     {"story": "第5問：最後の謎…", "image_id": "6c12aedc292307f95ccd67e959973761", "hint_word": "egg", "hint": "鳥が産む丸いものだよ"},
 ]
 
-BONUS_PUZZLE = {"story": "おまけ問題：最後の挑戦！", "image_id": "xxxxxx", "hint_word": "fish", "hint": "海の中を泳ぐ生き物だよ"}
+BONUS_PUZZLE = {"story": "おまけ問題：最後の挑戦！", "image_id": "6c12aedc292307f95ccd67e959973761", "hint_word": "fish", "hint": "海の中を泳ぐ生き物だよ"}
 
 ENDING_GOOD = "Goodエンディング（大団円！）"
 ENDING_BAD = "Badエンディング（少し後味が悪い…）"
